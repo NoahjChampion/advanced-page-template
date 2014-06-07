@@ -8,7 +8,8 @@ Plugin Name: Advanced Page Template
 Plugin URI: http://wordpress.org/plugins/advanced-page-template/
 Description: This plugin enables to specify the custom fields for the page templates in php comment block of them, and displays specified custom fields for that page template in the backend.
 Author: Xing
-Version: 1.0
+Author URI: http://www.webuddysoft.com/
+Version: 1.1
 */
 
 if( !class_exists('apt') ):
@@ -66,7 +67,22 @@ class apt
 
 	function helpers_hash($string){
 		$array = explode(':', $string);
-		$hash = array(trim($array[0]) => trim($array[1]));
+
+		$hash = array();
+
+		$pattern = '/\((.*)\)/';
+
+		preg_match($pattern, $array[1], $matches);
+
+		if(count($matches) == 2)
+		{
+			$values = explode('|', $matches[1]);
+			$hash = array(trim($array[0]) => $values);
+
+		}else{
+			$hash = array(trim($array[0]) => trim($array[1]));
+		}
+		
 
 		return $hash;
 	}
@@ -140,8 +156,9 @@ class apt
 		echo "<div class='advanced-page-template'>";
 
 		?>
-			<p>
-				Please read readme file for usage of this plugin and I'd really appreciate it if you rate this plugin. <a href="https://wordpress.org/plugins/advanced-page-template/">Click here to rate.</a>
+			<p style="text-align: right;">
+				<a href="https://wordpress.org/plugins/advanced-page-template/">Click here to rate</a> |
+				<a href="http://forum.webuddysoft.com/blogs/advanced-page-template/53-wordpress-advanced-page-template-guide">Read online document</a>
 			</p>
 
 		<?php

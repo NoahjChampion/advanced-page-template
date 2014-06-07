@@ -23,8 +23,8 @@ Example 1:
 /*
 * Template Name: 2column-layout
 *
-* @custom_field main, type: textarea, label: 'Main content area'
-* @custom_field sidebar, type: textarea, label: 'Sidebar area'
+* @custom_field main, type: wysiwyg, label: 'Main content area'
+* @custom_field sidebar, type: wysiwyg, label: 'Sidebar area'
 */
 
 Example 2:
@@ -33,7 +33,7 @@ Example 2:
 *
 * @custom_field photo, type: image, label: 'Photo of manager'
 * @custom_field phone, type: text
-* @custom_field map, type: map
+* @custom_field map, type: google_map
 * 
 * Note: The photo, phone, map are the custom field names in each '@custom_field' line,
 * therefore use 'get_post_meta' method with those custom field names to get the values in this template. :)
@@ -42,6 +42,7 @@ Example 2:
 Please bring the page edit link up in the backend and select the template which you just edited and hit 'Update' or 'Save' button.
 After page refreshing, You can't miss new custom fields block from this template file.
 
+Please read my documentation http://forum.webuddysoft.com/blogs/advanced-page-template/53-wordpress-advanced-page-template-guide
 
 
 
@@ -57,6 +58,9 @@ After page refreshing, You can't miss new custom fields block from this template
 
 
 == Changelog ==
+
+= 1.1.0 =
+* enabled array options.
 
 = 1.0.0 =
 * Advanced Page Template.
