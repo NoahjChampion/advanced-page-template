@@ -141,7 +141,7 @@ class apt
 
 		?>
 			<p>
-				I'd really appreciate it if you rate this plugin. <a href="https://wordpress.org/plugins/advanced-page-template/">Click here to rate.</a>
+				Please read readme file for usage of this plugin and I'd really appreciate it if you rate this plugin. <a href="https://wordpress.org/plugins/advanced-page-template/">Click here to rate.</a>
 			</p>
 
 		<?php
