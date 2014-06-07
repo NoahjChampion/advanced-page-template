@@ -39,7 +39,7 @@ Example 2:
 * therefore use 'get_post_meta' method with those custom field names to get the values in this template. :)
 */
 
-Please bring the page edit link up in the backend and select the template which you just edited and hit 'update' or 'save' button.
+Please bring the page edit link up in the backend and select the template which you just edited and hit 'Update' or 'Save' button.
 After page refreshing, You can't miss new custom fields block from this template file.
 
 
