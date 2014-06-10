@@ -10,11 +10,32 @@ License: GPLv2 or later
 
 == Description ==
 
-Advanced Page Template is a nice new approach to custom fields of the page template.
-It parses the php comment block starting with '@custom_field' in the php template file, and displays the available custom fields for that template in the backend.
-It means that it doesn't save any configuration data to database, just config the custom fields in template file itself as how wordpress recognize the templates - just wordpress way! I am going to call it as 'templating comment lines'.
+Advanced Page Template is a nice new approach to custom fields by page template.
+As a wordpress developer, I've been using custom fields by post or page (custom post type).
+And there are several awesome plugins for that like "Advanced Custom Fields" plugin.
 
-Note: I really recommend you to install and activate Advanced Custom Fields plugin so as to get its perfect benifit. Field Types only works with Advanced Custom Fields plugin.
+But I noticed that some times custom fields should be managed by page template.
+Actually, It was very often in my case for several projects. 
+It was more realistic when I maintain the project which other developer developed.
+
+Lets say that client want to customize some pages easily in the backend and he doesn't know HTML well. In this case, we should have client to input the each part of the template simply in some where.
+
+It can be done by widget or post's custom fields.
+As a client, Custom fields is better because it is editable in edit page window itself.
+
+With original approach, I had to configure custom fields group for a page and assign it to that page and assign specific page template for that page.
+
+Not good, but we have a simple solution.
+
+Please try to simply configure the custom fields in the template file itself using this plugin and upload that template to the server. Its easy.
+
+This plugin parses the php comment lines starting with '@custom_field' in the wordpress template file, and allow user to input the those configured custom fields for that template in the backend.
+
+It means that it doesn't save any configuration data to database, just config the custom fields in template file itself as how wordpress recognize the templates - Its just wordpress way!
+
+I think that it makes developing and deploying more easy and more sense for the developers. :)
+
+Note: I highly recommend you to install and activate Advanced Custom Fields plugin so as to get its perfect benefit. Field Types only works with Advanced Custom Fields plugin.
 
 = Usage =
 Open a template file with any text editor and add some additional templating comment lines starting with @custom_field keyword:
