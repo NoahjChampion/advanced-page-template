@@ -57,6 +57,15 @@ Please read my documentation http://forum.webuddysoft.com/blogs/advanced-page-te
 
 
 
+== Screenshots ==
+
+1. Configuring the Custom Fields in the template file
+
+2. Check custom fields out on the backend
+
+
+
+
 == Changelog ==
 
 = 1.1.0 =
